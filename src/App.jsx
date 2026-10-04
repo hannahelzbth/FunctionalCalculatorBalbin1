@@ -154,25 +154,27 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-red-50 flex flex-col items-center justify-center p-4">
 
       {/* Calculator */}
       <div className="w-full max-w-sm">
 
+        {/* Title */}
         <div className="text-center mb-6">
-          <h1 className="text-4xl font-bold text-gray-900">
-            Calculator
+          <h1 className="text-4xl font-bold text-red-900">
+            FUNCTIONAL CALCULATOR
           </h1>
 
-          <p className="text-gray-600 mt-2">
-            React + Tailwind CSS
+          <p className="text-red-700 mt-2">
+            | BALBIN, HANNAH ELIZABETH P. | BSIT 3-1 | 
           </p>
         </div>
 
-        <div className="bg-gray-900 rounded-3xl p-5 shadow-2xl">
+        {/* Calculator Body */}
+        <div className="bg-red-950 rounded-3xl p-5 shadow-2xl">
 
           {/* Display */}
-          <div className="bg-gray-800 rounded-2xl p-5 mb-5">
+          <div className="bg-red-900 rounded-2xl p-5 mb-5">
             <div className="text-right text-white text-4xl font-semibold break-all">
               {display}
             </div>
@@ -189,21 +191,21 @@ function App() {
               const isClear = button === "C";
 
               let buttonStyle =
-                "bg-gray-700 hover:bg-gray-600 text-white";
+                "bg-red-800 hover:bg-red-700 text-white";
 
               if (isOperator) {
                 buttonStyle =
-                  "bg-orange-500 hover:bg-orange-400 text-white";
+                  "bg-red-600 hover:bg-red-500 text-white";
               }
 
               if (isEquals) {
                 buttonStyle =
-                  "bg-green-600 hover:bg-green-500 text-white";
+                  "bg-red-500 hover:bg-red-400 text-white";
               }
 
               if (isClear) {
                 buttonStyle =
-                  "bg-red-600 hover:bg-red-500 text-white";
+                  "bg-red-700 hover:bg-red-600 text-white";
               }
 
               return (
@@ -228,9 +230,9 @@ function App() {
         </div>
 
         {/* User Guide */}
-        <div className="bg-white rounded-2xl shadow-lg p-6 mt-6">
+        <div className="bg-white border border-red-100 rounded-2xl shadow-lg p-6 mt-6">
 
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+          <h2 className="text-2xl font-bold text-red-900 mb-3">
             User Guide
           </h2>
 
@@ -239,7 +241,7 @@ function App() {
             mathematical operations.
           </p>
 
-          <h3 className="font-bold text-gray-900">
+          <h3 className="font-bold text-red-900">
             How to Use
           </h3>
 
@@ -251,7 +253,7 @@ function App() {
             <li>Press C to clear the calculator.</li>
           </ol>
 
-          <h3 className="font-bold text-gray-900 mt-5">
+          <h3 className="font-bold text-red-900 mt-5">
             Supported Operations
           </h3>
 
@@ -263,21 +265,18 @@ function App() {
             <li>Decimal numbers (.)</li>
           </ul>
 
-          <h3 className="font-bold text-gray-900 mt-5">
-            Keyboard Support
-          </h3>
-
-          <p className="text-gray-600 mt-2">
-            You can also use your keyboard to enter numbers and
-            operations. Press Enter to calculate and Escape to clear.
-          </p>
-
+  
         </div>
 
         {/* Footer */}
-        <div className="text-center text-gray-500 text-sm mt-6">
-          <p>DCIT 26: Application Development and Emerging Technologies</p>
-          <p className="mt-1">Laboratory 1 — Calculator Project</p>
+        <div className="text-center text-red-700 text-sm mt-6">
+          <p>
+            DCIT 26: Application Development and Emerging Technologies
+          </p>
+
+          <p className="mt-1">
+            Laboratory 1 — Calculator Project
+          </p>
         </div>
 
       </div>
